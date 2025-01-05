@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="name">
+                <img src="/static/marj.jpeg" alt="logo">
+                <h2>Marj's Portfolio</h2>
+            </div>
+            <nav class="links">
+                <a class="{% if request.path == '/home' %} active {% endif %}" href="home">Home</a>
+                <a class="{% if request.path == '/about-me' %} active {% endif %}" href="about-me">About me</a>
+                <a class="{% if request.path == '/contact-me' %} active {% endif %}" href="contact-me">Contact me</a>
+            </nav>
+        </div>
+    </header>
